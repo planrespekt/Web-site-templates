@@ -1,12 +1,17 @@
 body {
-    background-color: orangered;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Light Mode Styles */
+body {
+    background-color: #f10d0de0;
+    color: #000;
+}
+
 header {
-    background-color: rgb(129, 176, 57);
+    background-color: rgb(125, 182, 40);
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -24,7 +29,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #0a0404;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -35,11 +40,25 @@ main {
 }
 
 footer {
-    background-color: rgb(129, 176, 57);
+    background-color: rgb(125, 182, 40);
     color: #fff;
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: rgba(26, 26, 203, 0.849);
+    color: #fff;
+}
+
+header.dark-mode {
+    background-color: #555;
+}
+
+footer.dark-mode {
+    background-color: #555;
 }
