@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Website  templates</title>
+     <title>Website  templates</title>
 </head>
 <body>
 
@@ -16,6 +16,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <button onclick="toggleMode()">Toggle Mode</button>
     </header>
 
     <main>
@@ -29,6 +30,13 @@
     <footer>
         <p>&copy; 2023 My Website. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
 
 </body>
 </html>
